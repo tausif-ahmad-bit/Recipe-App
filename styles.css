@@ -209,18 +209,33 @@ body::-webkit-scrollbar-track {
     color: #fff;
     /* margin-bottom: 10px; */
 }  
-@media screen and (max-width:600px) {
+
+    @media screen and (max-width: 600px) {
     header nav {
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
     }
+
+    header nav h1 {
+        font-size: 22px;
+    }
+
     header nav form {
-        width: 80%;
-        margin-top: 20px;
+        width: 100%; /* Search bar takes full width on mobile */
     }
-    rescipe-details {
-        width: 90%;
-        height: 80%;
+
+    .recipe-container {
+        width: 95%; /* Use more screen real estate on mobile */
+        grid-gap: 20px;
     }
-    
+
+    .recipe-details {
+        width: 95%;
+        height: 90%;
+        padding: 10px;
+    }
+
+    .recipe-details-content h2 {
+        font-size: 22px;
+    }
 }

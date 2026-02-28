@@ -218,5 +218,9 @@ body::-webkit-scrollbar-track {
         width: 80%;
         margin-top: 20px;
     }
+    rescipe-details {
+        width: 90%;
+        height: 80%;
+    }
     
 }
